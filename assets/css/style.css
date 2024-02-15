@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0 50px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    column-gap: 30px;
+}
+
+div.cont {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background-color: rgba(0, 98, 185, 0.8);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div.header {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: black;
+}
+
+header nav li {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+div.cont h1 {
+    font-size: 72px;
+    text-transform: uppercase;
+}
+
+.cont .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    max-width: 90%;
+    color: white;
+}
+
+.head p {
+
+    text-align: center;
+}
+
+div.cont h4 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container a {
+    color: black;
+    background-color: white;
+    padding: 20px 50px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+/* ABOUT */
+section {
+    padding: 110px 0;
+}
+
+section#about {
+    background-color: #fafafa;
+}
+
+section .container {
+    width: 80%;
+    margin: auto;
+}
+
+.container .head {
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 20px;
+}
+
+.head h2 {
+    font-size: 30px;
+}
+
+.head p {
+    line-height: 30px;
+    font-size: 20px;
+    color: grey;
+}
+
+.head .line {
+    background-color: rgba(0, 98, 185, 0.8);
+    height: 5px;
+    border-radius: 10px;
+    width: 20px;
+    margin: auto;
+}
+
+
+/* COMPETENCE */
+.sous-container {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(211, 129, 22); */
+}
+
+.sous-container .connaissance {
+    width: 45%;
+    /* background-color: rgba(255, 0, 0, 0.834); */
+}
+
+.connaissance h3 {
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+.connaissance p {
+    font-size: 20px;
+    line-height: 30px;
+    color: grey;
+
+}
+
+.connaissance .buttons {
+    display: flex;
+    margin-top: 30px;
+    column-gap: 5px;
+}
+
+.buttons a {
+    padding: 15px 40px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    background-color: rgba(0, 98, 185, 0.8);
+    
+}
+
+.competence h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.competence ul {
+    display: flex;
+    column-gap: 15px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.competence ul li {
+    background-color: rgba(128, 128, 128, 0.23);
+    padding: 10px 25px;
+    border-radius: 5px;
+    color: grey;
+
+}
+
+.competence ul li:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.sous-container .competence {
+    width: 45%;
+    /* background-color: brown; */
+}
+/* PROJECT */
+
+.connaissance img{
+    width: 100%;
+    border: 1px;
+}
+
+#project  .competence{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+#project .competence p {
+    line-height: 30px;
+    font-size: 20px;
+    color: grey;
+}
+
+
+/* div .block2 nav{
+    text-transform: uppercase;
+    color: white;
+}
+div .block2 nav li{
+    background-color: black;
+    row-gap: 20px;
+    column-gap: 25px;
+} */
+
+/* MEDIA QUERY */
+@media screen and (max-width: 982px) {
+    nav label {
+        display: flex;
+    }
+
+    nav ul.mobile-menu {
+        display: none;
+    }
+
+    nav input#mobile:checked+ul.mobile-menu {
+        display: flex;
+        row-gap: 20px;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        z-index: 1000;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+    }
+
+    nav ul.mobile-menu li {
+        text-align: center;
+        /* border-bottom: 1px solid black; */
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    .banner-container h1 {
+        font-size: 50px;
+    }
+
+    .banner-container a {
+        padding: 10px 30px;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+}
